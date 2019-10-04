@@ -1,7 +1,7 @@
 {
   "name": "cheer-ups",
   "version": "1.0.0",
-  "description": "Cheer Ups App Created By Shamira",
+  "description": "Cheer",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -12,7 +12,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    // "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
