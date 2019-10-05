@@ -15,7 +15,7 @@ app.use(parser.json())
 app.use(methodOverride("_method"))
 
 
-app.get("/cheer",(req,res)=>{
+app.get("/",(req,res)=>{
     res.redirect("/cheer");
 });
 
