@@ -14,22 +14,22 @@ const CheerUpModel=require("../models/Cheer");
 //     })
 // })
 
-// router.get("/",(req,res)=>{
+router.get("/",(req,res)=>{
 
-//     CheerUpModel.find({}).then(cheer=>{
-//         // res.send("hello")
-//         res.json(cheer)
-//         console.log(cheer)
+    CheerUpModel.find({}).then(cheer=>{
+        // res.send("hello")
+        res.json(cheer)
+        console.log(cheer)
 
-//         // console.log(persons)
-//     })
-// });
+        // console.log(persons)
+    })
+});
 
 
 
-router.get("/", (req, res) => {
-    CheerUpModel.find({}).then(cheer => res.render('index', { cheer }))
-  });
+// router.get("/", (req, res) => {
+//     CheerUpModel.find({}).then(cheer => res.render('index', { cheer }))
+//   });
   
 
 

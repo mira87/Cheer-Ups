@@ -1,0 +1,88 @@
+.modal-img {
+    width: auto;
+    height: auto;
+    max-width: 146%;
+}
+
+
+
+.modal-text-box {
+    width: 95%;
+    height: 184px;
+    margin: 100px auto;
+    display: block;
+    background: linear-gradient(#ffad01, #fea200);
+    overflow: hidden;
+    position: relative;
+    max-width: 309px;
+    max-height: 184px;
+    padding: 14px;
+}
+
+
+
+.modal-text {
+    width: 50%;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 0px;
+}
+
+.modal-text p{
+    
+   padding: 0px;
+}
+
+
+.modal-text-box-img {
+    width: 61%;
+    position: absolute;
+    left: 136px;
+    top: 35px;
+    max-width: 184px;
+    max-height: 184px;
+    min-width: 184px;
+    min-height: 184px;
+}
+
+
+
+
+.modal{
+ 	background-color: rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+		/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+}
+
+
+
+
+@media(max-width:318px){
+
+    .modal-img{
+        display: none;
+    }
+
+
+}
+
+.modal h4{
+    margin: 0 auto;
+
+}
+
+.modal p{
+    margin-bottom: 5px;
+
+}
+
+.modal button{
+    margin: 0;
+    font-size: 10px;
+}
