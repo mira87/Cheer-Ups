@@ -3,20 +3,25 @@ const app=express();
 const cheerUpController = require("./controllers/cheer");
 const userController = require("./controllers/user");
 const parser=require("body-parser");
+const methodOverride=require("method-override");
 
 
+const hbs= require("hbs");
+
+app.set("view engine", "hbs");
 
 app.use(parser.urlencoded({extended: true}))
 app.use(parser.json())
+app.use(methodOverride("_method"))
 
 
 app.get("/cheer",(req,res)=>{
     res.redirect("/cheer");
 });
 
-app.get("/user",(req,res)=>{
-    res.redirect("/user");
-});
+// app.get("/user",(req,res)=>{
+//     res.redirect("/user");
+// });
 
 
 
@@ -28,5 +33,5 @@ app.use("/cheer/", cheerUpController);
 app.set("port", process.env.PORT || 8080);
 
 app.listen(app.get("port"), () => {
-  console.log(`✅ PORT: ${app.get("port")} 🌟`);
-});
+    console.log(`✅ PORT: ${app.get("port")} 🌟`);
+  });
