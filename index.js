@@ -28,6 +28,7 @@ app.get("/",(req,res)=>{
 app.use("/user/", userController);
 app.use("/cheer/", cheerUpController);
 
+app.use('/public', express.static('public'))
 
 
 app.set("port", process.env.PORT || 8080);
