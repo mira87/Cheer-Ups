@@ -1,9 +1,9 @@
 const mongoose=require("../app/db/connection");
 
 const userSchema= new mongoose.Schema({
-    title:"String",
-    topic:"String",
-    text:"String"
+    name:"String",
+    email:"String",
+    favorites:["String"]
 
 
 }) 

@@ -6,7 +6,13 @@ const CheerUpModel=require("../models/Cheer");
 
 
 
+router.get("/",(req,res)=>{
 
+    CheerUpModel.find({}).then(cheers=>{
+        // res.json(cheers)
+        res.send("hi")
+    })
+})
 
 
 
