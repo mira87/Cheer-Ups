@@ -6,14 +6,24 @@ const CheerUpModel=require("../models/Cheer");
 
 
 
+// router.get("/",(req,res)=>{
+
+//     CheerUpModel.find({}).then(cheer=>{
+//         res.json(cheer)
+//         // res.send("hi")
+//     })
+// })
+
 router.get("/",(req,res)=>{
 
-    CheerUpModel.find({}).then(cheers=>{
-        // res.json(cheers)
-        res.send("hi")
-    })
-})
+    CheerUpModel.find({}).then(cheer=>{
+        // res.send("hello")
+        res.json(cheer)
+        console.log(cheer)
 
+        // console.log(persons)
+    })
+});
 
 
 
