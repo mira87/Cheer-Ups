@@ -1,9 +1,16 @@
 const express = require('express')
 const app=express();
+const mongoose= require('mongoose')
 const cheerUpController = require("./controllers/cheer");
 const userController = require("./controllers/user");
 const parser=require("body-parser");
 const methodOverride=require("method-override");
+const expressValidator = require('express-validator');
+
+// const api = express.Router();
+app.use(expressValidator())
+
+
 
 
 const hbs= require("hbs");

@@ -1,8 +1,22 @@
 const mongoose=require("../app/db/connection");
 
 const userSchema= new mongoose.Schema({
-    name:"String",
-    email:"String",
+    name:{
+        type:String,
+        required:true
+    },
+    username:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    password:{
+        type:String,
+        required:true
+    },
     favorites:["String"]
 
 
