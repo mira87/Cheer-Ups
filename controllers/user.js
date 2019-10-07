@@ -5,75 +5,54 @@ const bcrypt=require('bcryptjs')
 
 
 
-//Register form
+// //Register form
 
-router.get("/register",(req,res)=>{
+// router.get("/register",(req,res)=>{
 
-    res.render("register")
-});
+//     res.render("register")
+// });
 
-//register process
+// //register process
 
-router.post("/register",(req, res)=>{
-    const name=req.body.name;
-    const email=req.body.email;
-    const username=req.body.username;
-    const password=req.body.password;
-    const password2=req.body.password2;
-
-    req.checkBody('name','Name is required.').notEmpty();
-    req.checkBody('email','Email is required.').notEmpty();
-    req.checkBody('email','Name is required.').isEmail();
-    req.checkBody('username','Username is required.').notEmpty();
-    req.checkBody('password','Password is required.').notEmpty();
-    req.checkBody('password2','Password does not match.').equals(req.body.password);
+// router.post("/register",(req, res)=>{
+//     const{name,email,password,password2}=req.body;
+//     let errors=[];
 
 
-    let errors=req.validationErrors();
+//     //check required fields
+//     if(!name ||!email ||!password||!password2){
+//         errors.push({msg:'Please fill in all fields.'})
+//     }
 
-    if(errors){
-        res.render('register', {
-            errors:errors
-        });
-            console.log(errors)
-    }
-    else{
-        let newUser=new UserModel({
-            name:name,
-            email:email,
-            username:username,
-            password:password
+//     //Check pw match
+//     if(password !==password2){
+//         errors.push({msg: 'Passwords do not match.'})
+//     }
 
-        })
-        //generate satlt
-        bycrypt.genSalt(10, function(err, satlt){
-            bcrypt.hash(newUser.password,salt,function(err,hash){
-                if (err){
-                    console.log(err);
-                }
-                newUser.password=hash;
-                newUser.save(function(err){
-                    if(err){
-                        console.log(err);
-                        return;
-                    }
-                    else{
-                        req.flash('success', 'Welcome to Cheer Ups. You can now login!');
-                        res.redirect('/user/login');
-                    }
-                })
-            });
-        })
-    }
-
-})
+//     //CHeck pw length
+//     if(password.length<6){
+//         errors.push({msg:'Password should be at least 6 characters.'})
+//     }
+//     if(errors.length>0){
+//         res.render('register',{
+//            errors, 
+//            name,
+//            email,
+//            password,
+//            password2
+//         })
+//     }
+//     else{
+//         res.send('pass')
+//     }
+// })
 
 
 
-//Login
-router.get("/login",(req,res)=>{
-    res.render('login')
-})
+// //Login
+// router.get("/login",(req,res)=>{
+//     res.render('login')
+// })
 
 
 module.exports=router;

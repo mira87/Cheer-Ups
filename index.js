@@ -5,10 +5,10 @@ const cheerUpController = require("./controllers/cheer");
 const userController = require("./controllers/user");
 const parser=require("body-parser");
 const methodOverride=require("method-override");
-const expressValidator = require('express-validator');
+// const expressValidator = require('express-validator');
 
 // const api = express.Router();
-app.use(expressValidator())
+// app.use(expressValidator())
 
 
 
@@ -20,6 +20,7 @@ app.set("view engine", "hbs");
 app.use(parser.urlencoded({extended: true}))
 app.use(parser.json())
 app.use(methodOverride("_method"))
+
 
 
 app.get("/",(req,res)=>{

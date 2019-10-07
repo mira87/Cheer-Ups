@@ -1,9 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
+p{
+    font-size: 9px; 
+}
 .modal-img {
     width: auto;
     height: auto;
@@ -17,7 +20,8 @@ body{
     height: 184px;
     margin: 100px auto;
     display: block;
-    background: linear-gradient(#ffad01, #fea200);
+    /* background: linear-gradient(#ffad01, #fea200); */
+    background: #14FFE3;
     overflow: hidden;
     position: relative;
     max-width: 309px;
@@ -68,10 +72,34 @@ body{
 
 
 
-/*************NAV***************/
-/* .search,.edit,.more,.home{
-    display:none;
-} */
+/*************NAV Modal***************/
+
+.nav-modal {
+    width: 100%;
+    background-color: #14FFE3;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    display: none;
+    padding-top: 73px;
+}
+
+.search, .edit, .more, .home, .login {
+    width: 100%;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+}
+
+
+
+
+/******NAV**************/
+
 
 .logo-holder{
     width:50%;
@@ -98,13 +126,14 @@ a{
     color:black;
 }
 .fa-home,.fa-search,.fa-pen,.fa-sign-in-alt{
-    width: 10px;
-    height: 10px;
+    width: 0.8em;
+    height: 1em;
     margin-left: 5px;
 }
 .logo{
     font-family: 'Permanent Marker', cursive;
-    color: orange;
+    /* color: orange; */
+    color:black;
     margin-left: 10px;
     margin-top:0;
     margin-bottom:0;
@@ -127,6 +156,7 @@ a{
 .hamburger{
     float: right;
     float:right;
+    margin-right: 10px;
 }
 /******CHEERS********/
 
@@ -143,7 +173,8 @@ a{
     height: 184px;
     margin: auto;
     display: none;
-    background: linear-gradient(#ffad01, #fea200);
+    /* background: linear-gradient(#ffad01, #fea200); */
+    background: #14FFE3;
     overflow: hidden;
     position: relative;
     max-width: 309px;
@@ -181,10 +212,11 @@ a{
 
 
 
-
-.qr-code{
-    height: 10px;
-    width: 10px;
+    .qr-code {
+        height: 2em;
+        width: 2em;
+        position: absolute;
+        bottom: 5px;
 }
 
 
@@ -302,3 +334,27 @@ a{
 .cheer-text-box:first-of-type {
     display: block;
   }
+
+
+  .layout-body-container{
+      padding: 3px;
+  }
+
+
+  /********/
+  .single-cheer-text-box{
+
+    width: 80%;
+    height: 184px;
+    margin: auto;
+    /* background: linear-gradient(#ffad01, #fea200); */
+    background: #14FFE3;
+    overflow: hidden;
+    position: relative;
+    max-width: 309px;
+    max-height: 184px;
+    padding: 14px;
+    float: left;
+    margin-top:50px;
+}
+  

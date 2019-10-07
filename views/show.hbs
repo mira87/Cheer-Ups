@@ -1,9 +1,59 @@
-<p>{{myInstance.title}}</p>
+{{!-- <form action="/cheer/:title?_method=delete" method="post" >
+    <input type="submit" value="Delete">
+</form> 
+ --}}
 
 
-tguyhgvfjtykguh
+{{!-- <form action="/{{cheer.title}}?_method=delete" method="post" >
+    <input type="submit" value="Delete">
+</form>  --}}
+
+
+
+
+  
+
+
+<div class="container">
+
+
+
+
+
+
+
+        <div class="single-cheer-text-box">
+
+            <div class="cheer-text">
+                <h4>Welcome to Cheer Ups</h4>
+
+                <p>{{myInstance.text}}</p>
+                <p>{{myInstance.title}}</p>
+
+
+
+
+            </div>
+            <div class="cheer-text-box-img">
+                <img class="cheer-img" src="../public/img/Canva - Cheerful Young Man Wearing Plaid Shirt Standing.png">
+
+            </div>
+                <div class="qr-code">
+                    <img class="qr-code" src="../public/img/frame.png">
+                </div>
+             
+        </div>
+
+
+
+{{!-- </div> --}}
+  
+
+</div>
 
 
 <form action="/{{myInstance.title}}?_method=delete" method="post" >
     <input type="submit" value="Delete">
 </form> 
+
+<a href="/edit/{{myInstance.title}}">Edit</a>

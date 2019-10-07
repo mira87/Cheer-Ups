@@ -1,13 +1,45 @@
+window.onload=function(){
+
 let modal=document.querySelector('.modal')
 let modalButton=document.querySelector('.modal-button');
 function modalGone(){
     modal.style.display="none";
 }
 
+if(modalButton){
+    modalButton.addEventListener('click',modalGone,false)
 
-modalButton.addEventListener('click',modalGone)
+}
 
 
+////Nav Modal
+
+let hamburger=document.querySelector('.hamburger');
+let navModal=document.querySelector('.nav-modal');
+
+function navAppear(){
+    navModal.style.display="block";
+}
+
+
+if(hamburger){
+    hamburger.addEventListener('click',navAppear,false);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//// Carosel
 
 //Next BUtton
 let next=document.querySelector('.next');
@@ -26,6 +58,12 @@ const cheer=document.querySelectorAll('.cheer-text-box')
 
 
 //Next Button Listens
+
+if(next){
+
+
+
+
 next.addEventListener('click',()=>{
     previouscheerIndex=currentcheerIndex;
     currentcheerIndex++;
@@ -44,9 +82,10 @@ next.addEventListener('click',()=>{
 
 })
 
-
+}
 
 //Previous Button Listens
+if(prev){
 prev.addEventListener('click',()=>{
 
     previouscheerIndex=currentcheerIndex;
@@ -78,4 +117,6 @@ prev.addEventListener('click',()=>{
 
 
 
+}
 
+}

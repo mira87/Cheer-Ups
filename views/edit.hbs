@@ -1,0 +1,18 @@
+<form action="/cheer/{{myInstance.title}}?_method=put"  method="post">
+    <p>
+        <label for="title">Title</label>
+        <input type="text" value="{{title}}" name="title">
+    </p>
+    <p>
+        <label for="complete">Complete</label>
+        {{#if complete}}
+            <input type="checkbox" name="complete" checked>
+        {{else}}
+            <input type="checkbox" name="complete">
+        {{/if}}
+    </p>
+    <input type="submit" value="Update">
+</form>
+
+
+ 
