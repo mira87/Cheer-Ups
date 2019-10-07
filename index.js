@@ -27,9 +27,9 @@ app.get("/",(req,res)=>{
     res.redirect("/cheer");
 });
 
-// app.get("/user",(req,res)=>{
-//     res.redirect("/user");
-// });
+app.get("/user",(req,res)=>{
+    res.redirect("/user");
+});
 
 
 
