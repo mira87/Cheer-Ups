@@ -24,7 +24,8 @@ app.use(methodOverride("_method"))
 
 
 app.get("/",(req,res)=>{
-    res.redirect("/cheer");
+    // res.redirect("/cheer");
+    res.send("hi")
 });
 
 // app.get("/user",(req,res)=>{

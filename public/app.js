@@ -58,6 +58,7 @@ const cheer=document.querySelectorAll('.cheer-text-box')
 
 
 //Next Button Listens
+let startText=document.querySelector('.start');
 
 if(next){
 
@@ -67,7 +68,7 @@ if(next){
 next.addEventListener('click',()=>{
     previouscheerIndex=currentcheerIndex;
     currentcheerIndex++;
-
+    startText.style.display="none"
     //prevent code from breaking at the end and sets the slide to start over at 0
     if (currentcheerIndex>=cheer.length){
         currentcheerIndex=0;
@@ -87,6 +88,7 @@ next.addEventListener('click',()=>{
 //Previous Button Listens
 if(prev){
 prev.addEventListener('click',()=>{
+    startText.style.display="none"
 
     previouscheerIndex=currentcheerIndex;
     currentcheerIndex--;

@@ -13,7 +13,13 @@ p{
     max-width: 146%;
 }
 
-
+.start {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+    padding: 24px;
+}
 
 .modal-text-box {
     width: 95%;
@@ -212,19 +218,27 @@ a{
 
 
 
-    .qr-code {
+    .qr-code,.fa-share-square {
         height: 2em;
         width: 2em;
-        position: absolute;
-        bottom: 5px;
+        float: left;
+        display: block;
+        margin-left: 10px;
 }
 
-
+.connect{
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    bottom: 11px;
+}
 
 @media(max-width:318px){
 
     .cheer-img{
         display: none;
+        bottom: 5px;
+
     }
 
 
@@ -385,3 +399,23 @@ a{
         }
 
   }
+
+  .create-area,.find-area,.edit-area,.login-area{
+    padding: 30px;
+    width: 80%;
+    /* height: 184px; */
+    margin: 100px auto;
+    display: block;
+    /* background: linear-gradient(#ffad01, #fea200); */
+    background: #14FFE3;
+    overflow: hidden;
+    position: relative;
+    /* max-width: 309px; */
+    /* max-height: 184px; */
+    padding: 14px;
+}
+  
+.buttons{
+    margin: 5px auto;
+    text-align: center;
+}    
