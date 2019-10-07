@@ -57,28 +57,42 @@ router.get("/", (req, res) => {
   });
  
 
-  router.get("/edit/:title", (req, res) => {
+  // router.get("/edit/:title", (req, res) => {
   
-    // CheerUpModel
-    //   .find({ topic: req.params.topic })
-    //   .then(cheer => res.json(cheer));
+  //   // CheerUpModel
+  //   //   .find({ topic: req.params.topic })
+  //   //   .then(cheer => res.json(cheer));
 
-    res.render("edit")
+  //   res.render("edit")
 
-  });
+  // });
 
-  router.put("/:title",(req,res)=>{
-    if(req.body.complete==="on"){
-        req.body.complete=true;
-    }
-    else{
-        req.body.complete=false;
-    }
-    // console.log(req.body)
-    CheerUpModel.findOneAndUpdate({title:req.params.title}, req.body).then(cheer=>{
-        res.redirect("/");
-    });
-});
+//   router.put("/:title/edit",(req,res)=>{
+//     if(req.body.complete==="on"){
+//         req.body.complete=true;
+//     }
+//     else{
+//         req.body.complete=false;
+//     }
+//     console.log(req.body)
+//     CheerUpModel.findOneAndUpdate({title:req.params.title}, req.body).then(cheer=>{
+//         res.redirect("/");
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   router.get("/new", (req, res) => {
    res.render("new")
@@ -89,6 +103,22 @@ router.get("/", (req, res) => {
     CheerUpModel.find({topic}).then(cheer => res.render('index', { cheer }))
   });
 
+
+  router.get("/edit/:title", (req, res) => {
+    CheerUpModel.findOne({ title: req.params.title }).then(myInstance => res.render('edit', { myInstance }));
+  });
+  
+
+
+
+
+router.put('/edit/:title', (req, res) => {
+  CheerUpModel.findOneAndUpdate({title: req.params.title}, req.body, { new: true })
+    .then(cheer => {
+      res.redirect("/");
+      // res.json('cheer')
+    })
+});
   // router.get("/show", (req, res) => {
   //   CheerUpModel.find({}).then(cheer => res.render( { cheer }))
   // })

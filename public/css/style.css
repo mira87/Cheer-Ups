@@ -357,4 +357,31 @@ a{
     float: left;
     margin-top:50px;
 }
-  
+  @media(min-width:379px){
+
+    .single-cheer-text-box-img {
+        width: 61%;
+            position: absolute;
+            left: 119px;
+            top: 35px;
+            max-width: 184px;
+            max-height: 184px;
+            min-width: 184px;
+            min-height: 184px;
+        }
+
+  }
+  @media(max-width:379px){
+
+    .single-cheer-text-box-img {
+        width: 61%;
+            position: absolute;
+            left: 73px;
+            top: 35px;
+            max-width: 184px;
+            max-height: 184px;
+            min-width: 184px;
+            min-height: 184px;
+        }
+
+  }
