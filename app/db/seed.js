@@ -12,10 +12,6 @@ CheerUpModel.deleteMany({})
     console.log("It may work")
   }).catch(err => console.log(err, 'MESSED UP SEEDS'));
 	
-  ;
-
-
-
   UserModel.deleteMany({})
   .then(() => {
     return UserModel.insertMany(user)

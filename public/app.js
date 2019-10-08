@@ -144,4 +144,19 @@ prev.addEventListener('click',()=>{
 
 }
 
+
+let titleReq=document.querySelector('#title');
+let title=[];
+// let gettitleReq=titleReq.value();
+let phrase="How are You"
+let splitPhrase=phrase.split(" ");
+
+    for(let i=0;i<phrase.length;i++){ if(phrase[i]===" "){phrase[i]="%20"}
+    title.push(phrase[i])
 }
+console(title)
+
+}
+
+
+
