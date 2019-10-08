@@ -3,13 +3,14 @@
 
         <div class="modal-text">
             <h4>Welcome to Cheer Ups</h4>
-            <p>This app not only allows you to brighten up your day. You can also pay it forward by creating and sharing
-                quotes that will brighten the days of others</p>
+            <h6>This app not only allows you to brighten up your day. You can also pay it forward by creating and
+                sharing
+                quotes that will brighten the days of others</h6>
 
-            <p>At the bottom of each Cheer Up is an option to share. You can share via Social Media or Email</p>
+            <h6>At the bottom of each Cheer Up is an option to share. You can share via Social Media or Email</h6>
 
-            <p>There is also a QRcode at the bottom of each Cheer Up. This allows you to scan and view the Cheer Up on
-                Android and iOS devices.</p>
+            <h6>There is also a QRcode at the bottom of each Cheer Up. This allows you to scan and view the Cheer Up on
+                Android and iOS devices.</h6>
 
             <button class="modal-button">Enter</button>
 
@@ -22,10 +23,6 @@
 
     </div>
 </div>
-
-
-
-
 
 
 <div class="container">
@@ -49,14 +46,14 @@
     <div class="cheer-text-box">
 
         <div class="cheer-text">
-            <h4>Welcome to Cheer Ups</h4>
+            <h4>{{this.title}}</h4>
 
             <p>{{this.text}}</p>
 
             {{!-- <button class="modal-button">Enter</button> --}}
 
 
-            <a href="/cheer/{{this.title}}"> <button>More</button></a>
+
 
         </div>
         <div class="cheer-text-box-img">
@@ -67,10 +64,11 @@
 
         </div>
         <div class="connect">
+            <a class="more-btn" href="/cheer/{{this.title}}"> <button>More</button></a>
             <div class="qr-code">
                 <img class="qr-code" src="../public/img/frame.png">
             </div>
-        
+
         </div>
     </div>
 
@@ -78,15 +76,6 @@
 
 
     {{!-- </div> --}}
-
-
-
-
-
-
-
-
-
     <div class="next arrow-holder">
 
         <i class="fas fa-chevron-right">
@@ -101,8 +90,3 @@
     </div>
 
 </div>
-
-
-
-
-   

@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold; 
+
 }
 
 p{
@@ -424,6 +426,10 @@ a{
     margin-top:50px;
 }
   @media(min-width:379px){
+    .logo{
+        font-size: 2em;
+
+    }
 
     .single-cheer-text-box-img {
         width: 61%;
@@ -455,7 +461,7 @@ a{
 
   @media(min-width:700px){
 
- 
+   
 
 .modal-text-box-img {
     width: 61%;
@@ -470,6 +476,18 @@ a{
     transform-origin: center center;
 }
 
+.single-cheer-text-box-img {
+    width: 61%;
+    position: absolute;
+    left: 67%;
+    top: 61%;
+    max-width: 184px;
+    max-height: 184px;
+    min-width: 184px;
+    min-height: 184px;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
 
 
 .modal-text-box {
@@ -486,8 +504,38 @@ a{
     max-height: 500px;
     padding: 14px;
 }
+
+
+.single-cheer-text-box {
+    resize: both;
+    height: 192px;
+    width: 95%;
+    margin: 100px auto;
+    display: block;
+    /* background: linear-gradient(#ffad01, #fea200); */
+    background: #14FFE3;
+    overflow: hidden;
+    position: relative;
+    max-width: 50%;
+    max-height: 500px;
+    padding: 14px;
 }
-user agent stylesheet
+}
+@media(min-width:776px){
+
+    
+    .single-cheer-text-box p {
+        font-size: 2em;
+        line-height: 1;
+        margin: 47px auto;
+    }
+    .single-cheer-text-box h4{
+        font-size: 2em;
+        margin: 10px auto;
+    }
+}
+
+
 div {
     display: block;
 
@@ -513,4 +561,9 @@ div {
     text-align: center;
 }    
 
-
+.more-btn,.edit-btn,.delete-btn{
+    height: 2em;
+    float: left;
+    display: block;
+    margin-left: 10px;
+}

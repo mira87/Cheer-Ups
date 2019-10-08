@@ -1,7 +1,7 @@
 <form class="edit-area" action="/cheer/edit/{{myInstance.title}}?_method=put" method="post">
 
     <h4>Title</h4>
-    <input type="text" value="{{this.title}}" name="title">
+    <input placeholder="{{myInstance.title}}" type="text" value="{{this.title}}" name="title">
 
     <h4>Choose Topic</h4>
     <select name="topic">
@@ -11,7 +11,7 @@
     </select>
 
     <h4>Enter your Cheer Quote</h4>
-    <textarea name="text" rows="10" cols="30" placeholder="Quote"></textarea>
+    <textarea name="text" rows="10" cols="30" placeholder="{{myInstance.text}}"></textarea>
 
     <input type="submit" value="Update">
 </form>

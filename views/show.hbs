@@ -2,7 +2,6 @@
     <div class="single-cheer-text-box">
 
         <div class="cheer-text">
-            <h4>Welcome to Cheer Ups</h4>
 
             <p>{{myInstance.text}}</p>
         </div>
@@ -18,14 +17,14 @@
                 <img class="qr-code" src="../public/img/frame.png">
             </div>
             
+            <div class="buttons" >
+<form  action="/cheer/{{myInstance.title}}?_method=delete" method="post">
+    <input class="delete-btn" type="submit" value="Delete">
+    </form>
+
+    <a class="edit-btn href="/cheer/edit/{{myInstance.title}}"><button>Edit</button></a>
+</div>
         </div>
     </div>
 </div>
 
-<div class="buttons" >
-<form action="/cheer/{{myInstance.title}}?_method=delete" method="post">
-    <input type="submit" value="Delete">
-    </form>
-
-    <a href="/cheer/edit/{{myInstance.title}}"><button>Edit</button></a>
-</div>
