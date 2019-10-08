@@ -31,10 +31,9 @@ if(hamburger){
 ///
 let shareBtn=document.querySelector('.fa-share-square');
 
-let socialMedia=document.querySelector('.Social-Media');
+let socialMedia=document.querySelector('.social-media');
 
 function shareAppear(){
-    console.log('click')
 
     socialMedia.style.display="block";
 }
@@ -43,6 +42,17 @@ if (shareBtn){
     shareBtn.addEventListener('click',shareAppear,false)
 
 }
+
+
+let closeShare=document.querySelector('.close');
+
+function shareClose(){
+    socialMedia.style.display="none"
+}
+
+closeShare.addEventListener('click',shareClose,false)
+
+
 
 
 ////////
