@@ -122,8 +122,10 @@ nav ul{
     float: left;
 }
 
-nav li{
+li{
     list-style: none;
+}
+nav li{
     float: left;
 }
 
