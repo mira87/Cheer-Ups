@@ -164,6 +164,78 @@ a{
     float:right;
     margin-right: 10px;
 }
+
+
+
+/*************/
+
+.Social-Media{
+    width: 60%;
+    background-color: #14FFE3;
+    overflow: hidden;
+    margin: auto;
+    display: none;
+
+}
+
+
+    .mail {
+        width: 100%;
+        /* height: 19%; */
+        clear: both;
+        padding-top: 47px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: auto;
+        font-size: 1em;
+       
+        overflow: auto;
+}
+
+.mail-btn{
+    float: left;
+    width: 11%;
+}
+.fb, .linkedin, .pinterest {
+    
+    width: 82%;
+    /* height: 19%; */
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    overflow: auto;
+}
+
+.twitter{
+    width: 100%;
+    clear: both;
+    padding-top: 47px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    overflow: auto;
+}
+
+.fb-share-button,.linkedin-btn,.pin-btn,.twitter-btn{
+    float: left;
+    width: 11%;
+}
+
+.linkedin-text,.pinterest-text,.fb-text,.twitter-text,.mail-text{
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 0;
+}
+
 /******CHEERS********/
 
 .cheer-img {
@@ -216,6 +288,9 @@ a{
     min-height: 184px;
 }
 
+/* .cheer-img2{
+    display: none;
+} */
 
 
     .qr-code,.fa-share-square {
@@ -419,3 +494,5 @@ a{
     margin: 5px auto;
     text-align: center;
 }    
+
+

@@ -28,11 +28,24 @@ if(hamburger){
 
 }
 
+///
+let shareBtn=document.querySelector('.fa-share-square');
+
+let socialMedia=document.querySelector('.Social-Media');
+
+function shareAppear(){
+    console.log('click')
+
+    socialMedia.style.display="block";
+}
+
+if (shareBtn){
+    shareBtn.addEventListener('click',shareAppear,false)
+
+}
 
 
-
-
-
+////////
 
 
 
