@@ -34,3 +34,4 @@ I started off building my index.js, my models, controllers, views, and seeding m
 As usual I commited often to Heroku and Github.
 I used Postman to check for errors along with. I used nodemon to connect and see my updates. 
 
+I'm excited to see my user's input.
