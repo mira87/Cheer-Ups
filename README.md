@@ -22,8 +22,10 @@ The motivation of this app was based on the fact that I believe that when indivi
 
 To start this project I brainstormed started with just drawing the Request Response Cycle and how it related to my project. I created a User Story so that I can think as a user what features and functionality would be desirable.
 
-![](public/img/Req-Res.png)
+![](public/img/project2-request-response.png)
 ![](public/img/Wireframe.png)
+![](public/img/project2.png)
+
 
 I connected to Heroku and Github as early as possible.
 

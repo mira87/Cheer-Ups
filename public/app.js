@@ -28,7 +28,7 @@ window.onload = function () {
 
     }
 
-    ///
+    ///SOCIAL MEDIA MODAL
     let shareBtn = document.querySelector('.fa-share-square');
 
     let socialMedia = document.querySelector('.social-media');
@@ -51,15 +51,6 @@ window.onload = function () {
     }
 
     closeShare.addEventListener('click', shareClose, false)
-
-
-
-
-    ////////
-
-
-
-
 
 
     //// Carosel
@@ -144,7 +135,6 @@ window.onload = function () {
 
     let titleReq = document.querySelector('#title');
     let title = [];
-    // let gettitleReq=titleReq.value();
     let phrase = "How are You"
     let splitPhrase = phrase.split(" ");
 

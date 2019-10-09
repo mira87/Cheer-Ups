@@ -9,7 +9,6 @@ router.get("/", (req, res) => {
 
 
 router.post("/", (req, res) => {
-  console.log(req.body)
   CheerUpModel.create(req.body).then(cheer => {
     res.redirect("/");
   });
@@ -19,23 +18,14 @@ router.get("/find", (req, res) => {
   res.render("find")
 })
 
-
-
-
 router.post("/find", (req, res) => {
-  console.log(req.body);
   CheerUpModel.findOne({ title: req.body.title }).
   then(myInstance => {
-    console.log(myInstance)
-    // res.render('show', { myInstance })
     res.redirect(`/cheer/${myInstance.title}`)
   });
 
 
 });
-
-
-
 
 router.get("/show", (req, res) => {
   res.render("show")
@@ -45,12 +35,6 @@ router.get("/show", (req, res) => {
 router.get("/new", (req, res) => {
   res.render("new")
 });
-
-
-// router.get("/show", (req, res) => {
-//   CheerUpModel.find({ title }).then(cheer => res.render('index', { cheer }))
-// });
-
 
 router.get("/edit/:title", (req, res) => {
   CheerUpModel.findOne({ title: req.params.title }).then(myInstance => res.render('edit', { myInstance }));
@@ -64,13 +48,11 @@ router.put('/edit/:title', (req, res) => {
     })
 });
 
-
 router.get("/:title", (req, res) => {
   CheerUpModel.findOne({ title: req.params.title }).then(myInstance => res.render('show', { myInstance }));
 });
 
 router.post("/:title", (req, res) => {
-  console.log(req.body);
   CheerUpModel.findOne({ title: req.body.title }).then(myInstance => res.render('show', { myInstance }));
 });
 
@@ -80,9 +62,6 @@ router.delete("/:title", (req, res) => {
     res.redirect("/");
   });
 });
-
-
-
 
 module.exports = router;
 
