@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-mongoose.Promise = Promise
+mongoose.Promise = Promise;
 
 let mongoURI = "";
 
@@ -17,4 +17,4 @@ mongoose
   )
   .catch(error => console.log("Connection failed!", error));
 
-module.exports = mongoose
+module.exports = mongoose;
