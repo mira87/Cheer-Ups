@@ -5,10 +5,9 @@ body {
   font-weight: bold;
 }
 
-p {
-  font-size: 9px;
+h2{
+  font-size: 10px;
 }
-
 
 /************WELCOME MODAL*********/
 .modal-img {
@@ -17,7 +16,10 @@ p {
   max-width: 146%;
 }
 
-
+.modal p {
+  margin-bottom: 0;
+  margin-top:0;
+}
 
 .modal-text-box {
   width: 95%;
@@ -32,12 +34,21 @@ p {
   padding: 14px;
 }
 
-.modal-text {
+/* .modal-text {
   width: 50%;
   font-size: 10px;
   line-height: 11px;
   margin-top: 0px;
+} */
+
+
+.modal-text {
+  width: 50%;
+  font-size: 10px;
+  line-height: 11px;
+  margin-top: -11px;
 }
+
 
 .modal-text p {
   padding: 0px;
@@ -81,7 +92,7 @@ p {
 
 .start {
     font-family: "Permanent Marker", cursive;
-    font-size: 1em;
+    font-size: 2em;
     margin: auto;
     text-align: center;
     padding: 24px;
@@ -450,6 +461,12 @@ a {
     transform-origin: center center;
   }
 
+  .modal-text p {
+    padding: 0px;
+    font-size: 1vw;
+    line-height: 1.2em;
+}
+
   .single-cheer-text-box-img {
     width: 61%;
     position: absolute;
@@ -501,6 +518,57 @@ a {
     font-size: 2em;
     margin: 10px auto;
   }
+
+  .modal h4{
+    margin: 5px 0;
+    font-size:1em;
+    line-height: 16px;
+    margin-top:0px;
+
+  }
+}
+
+@media(min-width:1450px){
+
+  .modal-text {
+    width: 57%;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: -11px;
+}
+
+  .modal-text-box {
+      resize: both;
+      height: 232px;
+      width: 100%;
+      margin: 100px auto;
+      display: block;
+      background: #14ffe3;
+      overflow: hidden;
+      position: relative;
+      max-width: 50%;
+      max-height: 532px;
+      /* padding: 14px; */
+  }
+
+  .modal-text-box-img {
+    width: 61%;
+    position: absolute;
+    left: 67%;
+    top: 68%;
+    max-width: 184px;
+    max-height: 184px;
+    min-width: 184px;
+    min-height: 184px;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+.modal p {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 
+
+}
