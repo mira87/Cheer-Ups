@@ -20,6 +20,7 @@ No major code quality issues, makes use of JS best practices appropriately, and 
 
 - Nice job separating out your files into models, views, and controllers!
 - Make sure to clean up/remove any random whitespaces in your js files (e.g., https://github.com/mira87/Cheer-Ups/blob/master/controllers/cheer.js)
+- Also, make sure your indentation is consistent throughout all your files (pick either 2 or 4 spaces for your indentation)
 - Make sure to add your `node_modules` to `.gitignore`
 
 ## Functionality - Excelling
